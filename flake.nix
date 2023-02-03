@@ -4,6 +4,12 @@
   outputs = { self }: {
 
     templates = {
+      latex = {
+        path = ./aarch64/latex;
+        description = "latex template that builds with pdflatex";
+        welcomeText = "Change the 'name' parameter in the inputs of flake.tex to point to your latex document";
+      };
+
       python-aarch64 = {
         path = ./aarch64/python;
         description = "python template using python 3.11 and pipenv for aarch64-darwin";
