@@ -8,7 +8,7 @@
     system = "aarch64-darwin";
     overlays = [
         (self: super: {
-          python = super.python311;
+          python = super.python311Full;
         })
       ];
     pkgs = import nixpkgs { inherit system overlays; };
