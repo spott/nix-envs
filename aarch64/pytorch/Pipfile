@@ -9,8 +9,9 @@ pandas = "*"
 jupyterlab = "*"
 torchaudio = "*"
 torchvision = "*"
-pytorch-lightning = "*"
+lightning = "*"
 pytorch-nlp = "*"
+pytorch-lightning = "*"
 
 [dev-packages]
 
