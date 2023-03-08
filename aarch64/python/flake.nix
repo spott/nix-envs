@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs";
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-22.11-darwin";
   };
 
   outputs = { self, nixpkgs }: 
@@ -8,7 +8,7 @@
     system = "aarch64-darwin";
     overlays = [
         (self: super: {
-          python = super.python311Full;
+          python = super.python311;
         })
       ];
     pkgs = import nixpkgs { inherit system overlays; };
