@@ -15,10 +15,22 @@
         description = "Generic template for adding packages to environment";
         welcomeText = "Change the <change this> text to add packages";
       };
+      
+      python-project = {
+        path = ./all/python_project;
+        description = "python project for all systems";
+        welcomeText = "Change the project_name text to your project name";
+      };
 
       python-aarch64 = {
         path = ./aarch64-darwin/python;
         description = "python template using python 3.11 and pipenv for aarch64-darwin";
+      };
+      
+      python-aarch64 = {
+        path = ./aarch64-darwin/python_project;
+        description = "python project for aarch64-darwin systems";
+        welcomeText = "Change the project_name text to your project name";
       };
 
       pytorch-aarch64 = {
