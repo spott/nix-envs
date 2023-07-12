@@ -7,7 +7,7 @@
       latex = {
         path = ./all/latex;
         description = "latex template that builds with pdflatex";
-        welcomeText = "Change the 'name' parameter in the inputs of flake.tex to point to your latex document";
+        welcomeText = "Change the 'name' parameter in the inputs of flake.nix to point to your latex document";
       };
       
       generic = {
@@ -27,7 +27,7 @@
         description = "python template using python 3.11 and pipenv for aarch64-darwin";
       };
       
-      python-aarch64 = {
+      python-project-aarch64 = {
         path = ./aarch64-darwin/python_project;
         description = "python project for aarch64-darwin systems";
         welcomeText = "Change the project_name text to your project name";
